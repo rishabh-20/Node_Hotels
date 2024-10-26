@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 const MenuItem=require('./models/MenuItem');
 const { request } = require('./routes/personRoutes');
 
+require('dotenv').config();
+
 app.use(bodyParser.json()); // Middleware to parse JSON request bodies
 
 // Default route
